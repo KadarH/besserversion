@@ -57,6 +57,12 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      # While Pages is still configured to publish from main, GitHub also runs
+      # its legacy branch deployment. Let that job finish before publishing the
+      # static artifact so the website remains the active deployment.
+      - name: Wait for legacy branch deployment
+        run: sleep 45
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
