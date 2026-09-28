@@ -12,7 +12,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     name: "Besser Version",
-    url: "https://besserversion.fr",
+    url: "https://besserversion.com",
     email: "bonjour@besserversion.fr",
     description:
       "Marketing digital, stratégie de communication et community management pour les entreprises.",

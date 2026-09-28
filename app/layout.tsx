@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://besserversion.fr"),
+  metadataBase: new URL("https://besserversion.com"),
   title: {
     default: "Besser Version — Studio marketing digital à Lille",
     template: "%s | Besser Version",
